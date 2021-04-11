@@ -1,9 +1,9 @@
 package com.code.assessment.beans;
 
+import java.time.Instant;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.time.Instant;
 
 @Entity
 @Table(name = "OrderBook")
@@ -17,6 +17,8 @@ public class Trade {
   private Instant maturityDate;
   private Instant createdDate;
   private String expiredFlag;
+
+  public Trade() {}
 
   public Trade(
       String tradeId,

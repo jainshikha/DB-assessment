@@ -3,12 +3,11 @@ package com.code.assessment.service;
 import com.code.assessment.beans.Trade;
 import com.code.assessment.exception.InvalidTradeException;
 import com.code.assessment.repo.TradeOrderRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import java.time.Instant;
 import java.util.List;
 import java.util.Optional;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 @Service
 public class TradeOrderService {
